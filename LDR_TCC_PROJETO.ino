@@ -32,8 +32,8 @@ void loop() {
  if((leitura_ldr1>leitura_ldr2+OBSTRUCAO)||(leitura_ldr2>leitura_ldr1+OBSTRUCAO))
  {
   digitalWrite(HIGH,LED_LDR)
-  //Manda Notificaçao para Usuario 
-  //Manda Por LCD
+  NotificaUsuario(); 
+  NotificaLCD();
  }
  
  if((ldr1+ldr2/2)<VALOR_MINIMO)
