@@ -34,33 +34,13 @@ void loop() {
         //==================Bomba C ==========================
   if(Tempo_Real==Tempo_boiaC)                 //Checa Tempo para a verificação da boia
     {
-    
-    int leitura_boiaC;                        //Variaveis de Leitura da Boia
-                                              
-    leitura_boiaC=analogRead(SENS_BOIA_C);    //Leitura do pino
-                                 
-        if(leitura_boiaC==0)                  //Checa excesso
-        {
-            digitalWrite(HIGH,LED_BOIA);
-            NotificaUsuario();
-            NotificaLCD();
-        }
+    BoiaCima();
     }
        //==================Bomba B ==========================
        
-       if(Tempo_Real==Tempo_boiaB)
+  if(Tempo_Real==Tempo_boiaB)
     {
-                 
-    int leitura_boiaB;                          //Variaveis de Leitura da Boia
-
-    leitura_boiaC=analogRead(SENS_BOIA_B);      //Leitura do pino
-
-        if(leitura_boiaB==0)                    //Checa Esvaziamento
-        {
-            digitalWrite(HIGH,LED_BOIA);
-            NotificaUsuario();
-            NotificaLCD();
-        }
+      BoiaBaixo();
     }
 
 
