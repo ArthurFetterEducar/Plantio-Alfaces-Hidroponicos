@@ -6,25 +6,25 @@
 
 //PINOS BOIAS
 #define SENS_BOIA_B         //Boia De Baixo
-#define SENS_BOIA_C         //Boia De Cima
+#define SENS_BOIA_A         //Boia De Cima
 #define LED_BOIA
 
 void setup() {
   
   //Pinos Boia 
-  pinMode(INPUT,SENS_BOIA_B); 
-  pinMode(INPUT,SENS_BOIA_C);
-  pinMode(OUTPUT,LED_BOIA);
+  pinMode(SENS_BOIA_B, INPUT); 
+  pinMode(SENS_BOIA_A,INPUT);
+  pinMode(LED_BOIA,OUTPUT);
 
   //Pinos LDR
-  pinMode(INPUT,LDR1);
-  pinMode(INPUT,LDR2);
-  pinMode(OUTPUT,LED_LDR);
+  pinMode(LDR1, INPUT);
+  pinMode(LDR2, INPUT);
+  pinMode(LED_LDR, OUTPUT);
 
  //Exec Funçoes 
   
  //Variaveis de Leitura LDR
- int  leitura_ldr1,leitura_ldr2;
+ int  leitura_ldr1, leitura_ldr2;
  
  //Checagem Obstruçao LDR 
  leitura_ldr1 = analogRead(LDR1);
@@ -40,10 +40,10 @@ void setup() {
  //----------------Leitura Sensores Boia -----------------------------
  
  //Variaveis de Leitura Boias
- int leitura_boiaC, leitura_boiaB;
+ int leitura_boiaA, leitura_boiaB;
  
  //Leitura dos pinos 
- leitura_boiaC = analogRead(SENS_BOIA_C);
+ leitura_boiaA = analogRead(SENS_BOIA_C);
  leitura_boiaB = analogRead(SENS_BOIA_B);
  
  //Checa esvaziamento
@@ -54,7 +54,7 @@ void setup() {
   }
   
   //Checa excesso
-  if(leitura_boiaC==1){
+  if(leitura_boiaA==1){
     digitalWrite(HIGH,LED_BOIA);
     NotificaUsuario(); 
     NotificaLCD(); 
