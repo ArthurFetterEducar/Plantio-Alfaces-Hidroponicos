@@ -30,7 +30,7 @@ void loop() {
  //------------------LEITURA DE OBSTRÇÃO------------------------------
  if((leitura_ldr1>leitura_ldr2+OBSTRUCAO)||(leitura_ldr2>leitura_ldr1+OBSTRUCAO))
  {
-  return 'O'; //Retorna Valor de obstrução para as funçeos de notificações 
+  return 1; //Retorna Valor de obstrução para as funçeos de notificações 
  }
  
  if((ldr1+ldr2/2)<VALOR_MINIMO)
