@@ -34,7 +34,7 @@ void loop() {
         //==================Bomba C ==========================
   if(Tempo_Real==Tempo_boiaC)                 //Checa Tempo para a verificação da boia
     {
-    BoiaCima();
+     BoiaCima();
     }
        //==================Bomba B ==========================
        
@@ -42,6 +42,5 @@ void loop() {
     {
       BoiaBaixo();
     }
-
 
 }
