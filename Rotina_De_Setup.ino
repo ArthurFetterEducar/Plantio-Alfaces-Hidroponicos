@@ -9,9 +9,9 @@
 #define SENS_BOIA_A         //Boia De Cima
 #define LED_BOIA
 
-void setup() {
-  
-  //Pinos Boia 
+void setup() 
+{
+   //Pinos Boia 
   pinMode(SENS_BOIA_B, INPUT); 
   pinMode(SENS_BOIA_A,INPUT);
   pinMode(LED_BOIA,OUTPUT);
@@ -31,7 +31,8 @@ void setup() {
  leitura_ldr2 = analogRead(LDR2);
  
  //------------------LEITURA DE OBSTRÇÃO------------------------------
- if((leitura_ldr1 > leitura_ldr2 + OBSTRUCAO) || (leitura_ldr2 > leitura_ldr1 + OBSTRUCAO)){
+ if((leitura_ldr1 > leitura_ldr2 + OBSTRUCAO) || (leitura_ldr2 > leitura_ldr1 + OBSTRUCAO))
+ {
   digitalWrite(HIGH,LED_LDR);
   NotificaUsuario(); 
   NotificaLCD();
@@ -47,23 +48,19 @@ void setup() {
  leitura_boiaB = analogRead(SENS_BOIA_B);
  
  //Checa esvaziamento
- if(leitura_boiaB == 0){
+ if(leitura_boiaB == 0)
+ {
     digitalWrite(HIGH, LED_BOIA);
     NotificaUsuario(); 
     NotificaLCD();
   }
   
   //Checa excesso
-  if(leitura_boiaA==1){
+  if(leitura_boiaA==1)
+  {
     digitalWrite(HIGH,LED_BOIA);
     NotificaUsuario(); 
     NotificaLCD(); 
   }
-
 }
 
-void loop() {
- 
-
-  
-}
