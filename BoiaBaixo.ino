@@ -11,8 +11,8 @@ void loop() {
 
  leitura_boiaB = analogRead(SENS_BOIA_B);  //Leitura do pino                                          
                                            //Checa Esvaziamento
- if(leitura_boiaB==0)                    //Nivel da Agua: Baixo               
+ if(leitura_boiaB==0)                      //Nivel da Agua: Baixo               
       return 'V';
- if(leitura_boiaB==1)                    //Nivel: Normal          
+ if(leitura_boiaB==1)                      //Nivel: Normal          
       return 'F';   
 }
