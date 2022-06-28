@@ -12,12 +12,6 @@ Tempo_boiaB=0,
 Tempo_boiaC=0;
 
 
-
-void setup() {
-  
-
-}
-
 void loop() {
   if(Tempo_Real==Tempo_bomba)                 //Checa tempo para a ativação da Bomba a vácuo 
     AtivaBomba();
@@ -42,5 +36,4 @@ void loop() {
     {
       BoiaBaixo();
     }
-
 }
