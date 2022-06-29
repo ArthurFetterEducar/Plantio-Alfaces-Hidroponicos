@@ -22,7 +22,7 @@ void setup() {
 
 void loop() {
   
-  delay(2000);                        //Delay para Leitura
+  delay(1000);                               //Delay para Leitura
   
   float temperatura = dht.readTemperature(); //Lê a temperatura no DHT22
 
