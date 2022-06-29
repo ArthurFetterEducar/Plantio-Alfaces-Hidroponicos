@@ -25,12 +25,10 @@ void loop() {
   if(Tempo_Real==Tempo_nutri)                 //Checa o Tempo para a ativação do Servo Motor 
     Nutriente(); 
   
-        //==================Bomba C ==========================
   if(Tempo_Real==Tempo_boiaC)                 //Checa Tempo para a verificação da boia
     {
      BoiaCima();
     }
-       //==================Bomba B ==========================
        
   if(Tempo_Real==Tempo_boiaB)
     {
