@@ -5,7 +5,7 @@
 #define SERVO_PIN
 #define SERVO_DELAY
 
-Servo_motor servo; 
+servo_motor servo; 
 
 int pos = 0;                    // Posição do servo motor
 
