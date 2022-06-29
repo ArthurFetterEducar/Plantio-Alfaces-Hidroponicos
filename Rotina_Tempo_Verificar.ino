@@ -1,7 +1,3 @@
-#define SENS_BOIA_B                           //Boia De Baixo
-#define SENS_BOIA_C                           //Boia De Cima
-#define LED_BOIA
-
 int Tempo_Real;
 const int 
 Tempo_bomba=0,
@@ -26,12 +22,9 @@ void loop() {
     Nutriente(); 
   
   if(Tempo_Real==Tempo_boiaC)                 //Checa Tempo para a verificação da boia
-    {
-     BoiaCima();
-    }
-       
+    BoiaCima();
+    
   if(Tempo_Real==Tempo_boiaB)
-    {
-      BoiaBaixo();
-    }
+    BoiaBaixo();
+    
 }
