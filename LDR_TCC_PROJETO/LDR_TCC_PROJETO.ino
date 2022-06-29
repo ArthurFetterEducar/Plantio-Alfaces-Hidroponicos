@@ -3,7 +3,6 @@
 #define VALOR_MINIMO      // Valor mínimo de claridade
 
 // PINOS DE LED
-#define LED_LDR      // ??? (Arthur)      
 #define LEDSTRIP 
 
 // PINOS LDR
