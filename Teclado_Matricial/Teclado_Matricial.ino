@@ -25,7 +25,7 @@ char teclado_matricial()
 
  comando = ' ';
  
- // Botão da esquerda
+ // Botão Cima
  if(tecla1 == 0 && debounce1 == 0){
   comando = 'C';                         // Comando que sera retornado
   debounce1 = 1;                         // Impede a repetição 
@@ -33,15 +33,15 @@ char teclado_matricial()
  if(tecla1 == 1)
   debounce1 = 0;                         // Sinaliza que o boão foi solto
 
- // Botão da direita
+ // Botão Baixo
  if(tecla2 == 0 && debounce2 == 0){
   comando = 'B';                         // Comando que sera retornado
-  debounce2 = 2;                         // Impede a repetição 
+  debounce2 = 1;                         // Impede a repetição 
  }
  if(tecla2 == 1)
   debounce2 = 0;                         // Sinaliza que o boão foi solto
 
- // Botão de Cima 
+ // Botão Esquerda 
   if(tecla3 == 0 && debounce3 == 0){
   comando = 'E';                         // Comando que sera retornado
   debounce3 = 1;                         // Impede a repetição 
@@ -49,7 +49,7 @@ char teclado_matricial()
  if(tecla3 == 1)
   debounce3 = 0;                         // Sinaliza que o boão foi solto
 
- //Botão Baixo
+ //Botão Direita
   if(tecla4 == 0 && debounce4 == 0){
   comando = 'D';                         // Comando que sera retornado
   debounce4 = 1;                         // Impede a repetição 
@@ -57,7 +57,7 @@ char teclado_matricial()
  if(tecla4 == 1)
   debounce4 = 0;                         // Sinaliza que o boão foi solto 
 
- //Botão de Confirmar
+ //Botão Confirmar
   if(tecla5 == 0 && debounce5 == 0){
   comando = 'e';                         // Comando que sera retornado
   debounce5 = 1;                         // Impede a repetição 
