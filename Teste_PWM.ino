@@ -2,8 +2,9 @@
 
 /*===========================================================
 Codigo para a realizaçao de testes de comportamento da estufa
-https://www.usinainfo.com.br/blog/programar-esp32-com-a-ide-arduino-tutorial-completo/
- ==========================================================*/
+https://dl.espressif.com/dl/package_esp32_index.json
+
+==========================================================*/
 /*
 #include <DHT.h>
 #include <Wire.h>
