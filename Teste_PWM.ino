@@ -104,7 +104,7 @@ void loop()
     Serial.print(" duty_cicle_lvl = ");
     Serial.println(duty_cicle_lvl);
 
-    ledcWrite(PINO_PIEZO , duty_cicle_lvl);
+    ledcWrite(ledChannel , duty_cicle_lvl);
       
       
 }
