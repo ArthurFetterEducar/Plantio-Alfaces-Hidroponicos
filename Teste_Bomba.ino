@@ -1,15 +1,7 @@
 /*===========================================================
 Codigo para a realizaçao de testes de comportamento da estufa
  ==========================================================*/
-/*              Menu Da Serial
- * Munisculo 0
- * Maiúsculo 1
- Q - DHT22
- W - PWM Peltier
- E - PIEZO 
- R - BOMBA
- 
-=============================================================*/
+
 #include <DHT.h>
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
