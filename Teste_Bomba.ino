@@ -1,11 +1,11 @@
 /*===========================================================
 Codigo para a realizaçao de testes de comportamento da estufa
  ==========================================================*/
-
+/*
 #include <DHT.h>
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
-
+*/
 //PINO PELTIER 
 #define PINO_PELTIER_F 36
 #define PINO_PELTIER_Q 35
@@ -40,10 +40,11 @@ int flag = 0;
 
 
 //================================DHT22=========================================
+/*
 DHT dht(PINO_DHT22, DHTTYPE); 
 dht.begin();
 float temperatura=0; 
-
+*/
 //=============================================================================
 
 void setup(){
@@ -58,9 +59,6 @@ void setup(){
   pinMode(PINO_BOMBA,OUTPUT);
 
   pinMode(PINO_SERVO,OUTPUT);
-
-  pinMode(LED_TROCA_AGUA,OUTPUT);
-  pinMode(LED_ABS_NUTRIENTES,OUTPUT);
 
   pinMode(PINO_BOIA1, INPUT);
   pinMode(PINO_BOIA2, INPUT);
