@@ -18,7 +18,7 @@ char daysOfTheWeek[7][12] = {"Dommingo", "Segunda", "Terça", "Quarta", "Quinta"
 
 
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "pool.ntp.org", -10656); //Define o Fuso - Horario
+NTPClient timeClient(ntpUDP, "pool.ntp.org", -10800); //Define o Fuso - Horario
 
 void setup(){
   Serial.begin(115200); 
