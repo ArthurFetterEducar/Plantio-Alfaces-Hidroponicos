@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
-const char *ssid     = "TP-Link_diego";
-const char *password = "99229129";
+const char *ssid     = "NomeDaRede";
+const char *password = "Senha";
 
 const long utcOffsetInSeconds = 20;
 
