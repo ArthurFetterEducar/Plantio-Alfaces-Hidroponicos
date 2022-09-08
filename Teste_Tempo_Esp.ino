@@ -6,8 +6,8 @@ em variaveis para usalas como parametros de ativaçoes por tempo.
 
 
 #include <NTPClient.h>
-#include <ESP8266WiFi.h> //tirar no esp32
-#include <WiFiUdp.h>
+
+#include <WiFi.h>
 
 const char *ssid     = "NomeDaRede";
 const char *password = "Senha";
