@@ -1,3 +1,10 @@
+/*
+A Bibliote NTPClient pode ser encontrada no Arduino IDE.
+Ela sincroniza por meio da internet dados de um servidor(NTP) o mesmo que tem nos sistemas operacionas como windows senso capaz de armazenar estes dados
+em variaveis para usala como parametro de ativaçao por tempo.
+*/
+
+
 #include <NTPClient.h>
 #include <ESP8266WiFi.h> //tirar no esp32
 #include <WiFiUdp.h>
