@@ -5,18 +5,18 @@
 const char *ssid     = "NomeDaRede";
 const char *password = "Senha";
 
-const long utcOffsetInSeconds = 20;
+
 
 char daysOfTheWeek[7][12] = {"Dommingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"};
 
-// Define NTP Client to get time
+
 WiFiUDP ntpUDP;
-NTPClient timeClient(ntpUDP, "br.pool.ntp.org", -10656);
+NTPClient timeClient(ntpUDP, "br.pool.ntp.org", -10656); //Define o Fuso - Horario
 
 void setup(){
-  Serial.begin(115200);
+  Serial.begin(115200); 
 
-  WiFi.begin(ssid, password);
+  WiFi.begin(ssid, password); //Conecta na Rede
 
   while ( WiFi.status() != WL_CONNECTED ) {
     delay ( 500 );
@@ -27,8 +27,8 @@ void setup(){
 }
 
 void loop() {
-  timeClient.update();
-   timeClient.forceUpdate();
+  timeClient.update(); //Atualiza Hora
+   timeClient.forceUpdate(); //Força Atualizaçao 
 
   Serial.print(daysOfTheWeek[timeClient.getDay()]);
   Serial.print(", ");
