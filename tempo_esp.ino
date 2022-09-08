@@ -1,5 +1,5 @@
 #include <NTPClient.h>
-#include <ESP8266WiFi.h>
+#include <ESP8266WiFi.h> //tirar no esp32
 #include <WiFiUdp.h>
 
 const char *ssid     = "NomeDaRede";
@@ -28,9 +28,9 @@ void setup(){
 
 void loop() {
   timeClient.update(); //Atualiza Hora
-   timeClient.forceUpdate(); //Força Atualizaçao 
+   timeClient.forceUpdate(); //Força Atualizaçao caso ocorra um bug na hora da atualizaçao!
 
-  Serial.print(daysOfTheWeek[timeClient.getDay()]);
+  Serial.print(daysOfTheWeek[timeClient.getDay()]); 
   Serial.print(", ");
   Serial.print(timeClient.getHours());
   Serial.print(":");
