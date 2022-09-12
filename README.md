@@ -15,5 +15,6 @@ Este projeto é voltado ao desenvolvimento de uma estufa de pequeno porte que fa
 
 👩‍💻 NTPClient: https://github.com/arduino-libraries/NTPClient 
 
+🔥 Firebase-ESP-Client: https://github.com/mobizt/Firebase-ESP-Client
 
-🦾 ESP32: https://dl.espressif.com/dl/package_esp32_index.json 
+🤖 ESP32: https://dl.espressif.com/dl/package_esp32_index.json 
