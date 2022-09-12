@@ -7,6 +7,8 @@ Este projeto é voltado ao desenvolvimento de uma estufa de pequeno porte que fa
 
 😱 Adafruit_GFX: https://github.com/adafruit/Adafruit-GFX-Library
 
+🥴 Adafruit BusIO: https://github.com/adafruit/Adafruit-GFX-Library/blob/8d7bdff6dc9dac30528469936959a446b661c8b9/library.properties#L10
+
 🥵 DHT: https://github.com/adafruit/DHT-sensor-library
 
 🍍 Adafruit_Sensor: https://github.com/adafruit/Adafruit_Sensor
