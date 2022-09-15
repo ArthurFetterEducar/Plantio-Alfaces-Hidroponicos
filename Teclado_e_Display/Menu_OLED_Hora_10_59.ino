@@ -74,7 +74,7 @@ void loop() {
  }//if para interaçoes de menu
 
 
-leitura = Serial.read();   //Leitura de Botoes
+leitura = Serial.read();   //Leitura de Botoes Botar Switch no codigo principal
 if(leitura == 'w')
 dir++;
 if(leitura == 's')
