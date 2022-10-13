@@ -11,7 +11,7 @@
 #define COOLER_F 15 
 #define COOLER_Q 16
 
-#define ADC_VREF_mV    3300.0 // Tensao de entrada do LM35 para referencia em converção
+#define ADC_VREF_mV    3300.0
 #define ADC_RESOLUTION 4096.0
 #define PINO_LM35_Q 36
 #define PINO_LM35_F 35
