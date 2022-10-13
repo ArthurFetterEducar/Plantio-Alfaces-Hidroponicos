@@ -145,9 +145,14 @@ float Umidade() {
 
 //Le a tensao do LM35 sobre o peltier Frio
 float LeituraLmF() {
+  //Leitura do Pino conectado o LM35
   int adcVal = analogRead(PINO_LM35_F);
+  //Converçao da leitura para milivolts
+  //adcVal = Leitura do LM35
+  //ADC_VREF_mV = Tensao de Alimentação do LM para converçao 
+  //ADC_RESOLUTION = Esp tem resolução dos pinos analogicos de 12bits ou seja 4096.0
   float milliVolt = adcVal * (ADC_VREF_mV / ADC_RESOLUTION);
-  // convert the voltage to the temperature in °C
+  //Converção de milivolts para graus celsius 
   float tempC = milliVolt / 5;
   return tempC;
 }
@@ -155,10 +160,15 @@ float LeituraLmF() {
 
 //Le a tensao do LM35 sobre o peltier Quente
 float LeituraLmQ() {
+  //Leitura do Pino conectado o LM35
   int adcVal = analogRead(PINO_LM35_Q);
+  //Converçao da leitura para milivolts
+  //adcVal = Leitura do LM35
+  //ADC_VREF_mV = Tensao de Alimentação do LM para converçao 
+  //ADC_RESOLUTION = Esp tem resolução dos pinos analogicos de 12bits ou seja 4096.0
   float milliVolt = adcVal * (ADC_VREF_mV / ADC_RESOLUTION);
-  // convert the voltage to the temperature in °C
-  float tempC = milliVolt / 5;
+  //Converção de milivolts para graus celsius 
+  float tempC = milliVolt / 10;
   return tempC;
 }
 
