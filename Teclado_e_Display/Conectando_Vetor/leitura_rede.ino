@@ -1,25 +1,38 @@
-#include <ESP8266WiFi.h>
-int i,j,rede,leitura;
+#include <WiFi.h>
+int i, j=0, rede, leitura;
+
+String x[5];
 
 void setup() {
-  Serial.begin(115200);
+
+  Serial.begin(9600);
 
 }
 
 void loop() {
-  rede = WiFi.scanNetworks();
-  if(leitura == 0){
-  for(i = 0; i < rede; i++)
-  {
-     if(WiFi.RSSI(i) > -85)
-     {
-      
-      Serial.println (WiFi.SSID(i));  
-      Serial.println (WiFi.RSSI(i));
-     }
-  }
- }
   
+  rede = WiFi.scanNetworks();
+  
+  if (leitura == 0) {
+    
+    for (i = 0; i < rede; i++)
+    {
+      
+      if (WiFi.RSSI(i) > -85)
+      {
+        WiFi.SSID(i) = x[j];
+        j++;
+        Serial.println (WiFi.SSID(i));
+      }
+    
+    }
+  }
+ 
+ for (i = 0; i < rede; i++)
+ {
+  Serial.println(x[i]);
+ }
 
 
 }
+
