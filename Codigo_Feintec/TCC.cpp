@@ -242,9 +242,9 @@ void DesligaPeliterF() {
 
 // Rotina do Servo Motor para reabastecimento de nutrientes da estufa
 void Reabastecimento_Nutriente() {
-  myservo.write(180);
+  myservo.write(80);
   delay(2000);
-  myservo.write(150);
+  myservo.write(140);
 }
 
 void Desliga_Bomba() {
