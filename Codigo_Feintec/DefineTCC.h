@@ -27,8 +27,8 @@
 #define PINO_SERVO 19
 
 //PINO OLED
-#define PINO_SCL 21
-#define PINO_SDA 22
+#define PINO_SCL 22
+#define PINO_SDA 21
 
 //PINO DO TECLADO
 #define PINO_TECLA_CIMA 32
