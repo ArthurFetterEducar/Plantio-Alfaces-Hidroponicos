@@ -167,23 +167,19 @@ float LeituraLmQ() {
 void LigaPeliterQ(float temp) {
   /* Potencia
     Nivel Adequado:24C
-    Frio -> No Talo: 14C
+    Frio ->: 14C
     Medio:16
     Baixo:20 até o 24
-
-    Quente-> No Talo: 34
+    Quente->:34
     Medio:30
     Baixo:26 até o 24
-
     OBS:histerese entre 20 e 28 Gruaus para ligar \0/
   */
-
   if (temp <= 16) {
     ledcWrite(ledChannel , PWM_ALTO);
     Serial.println("PWM ALTO");
   }
   if (temp > 16 && temp <= 20) {
-
     ledcWrite(ledChannel , PWM_MEDIO);
     Serial.println("PWM_MEDIO");
   }
