@@ -47,7 +47,6 @@ void loop() {
   //============================ Config Oled ==============
   ClearOled();
   menu =  Botao(menu);
-  
   if (menu == 0)
     Menu1(0, 0, 0,StatusSonar );
   else if (menu == 1)
