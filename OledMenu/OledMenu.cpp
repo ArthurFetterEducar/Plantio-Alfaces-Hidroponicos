@@ -181,25 +181,19 @@ void ClearOled(){
 int Botao(int menu){
   pinMode(BOTAODIR , INPUT_PULLUP);
   pinMode(BOTAOESQ , INPUT_PULLUP);
- 
   if(digitalRead(BOTAOESQ) == 0 && b1 == 0){
     menu++;
     b1 = 1;
   }
   if(digitalRead(BOTAOESQ) == 1) b1 = 0;
-  
   if(digitalRead(BOTAODIR) == 0 && b2 == 0){
   menu--;
   b2 = 1;
   }    
   if(digitalRead(BOTAODIR) == 1) b2 = 0;
-   
    if(menu>2)
    menu = 2;
-
    if(menu<-2)
    menu = -2;
-   
   return menu;
-  
 }
