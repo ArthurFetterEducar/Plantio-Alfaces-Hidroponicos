@@ -154,20 +154,12 @@ float Umidade() {
 float LeituraLmF() {
   int adcVal = analogRead(PINO_LM35_F);
   float milliVolt = adcVal * (ADC_VREF_mV / ADC_RESOLUTION);
-  //Serial.print("Lm35 Frio: ");
-  //Serial.println(milliVolt / 5);
-  // convert the voltage to the temperature in °C
   return milliVolt / 5;
 }
-
-
 //Le a tensao do LM35 sobre o peltier Quente
 float LeituraLmQ() {
   int adcVal = analogRead(PINO_LM35_Q);
   float milliVolt = adcVal * (ADC_VREF_mV / ADC_RESOLUTION);
-  // convert the voltage to the temperature in °C
-  //Serial.print("Lm35 Quente: ");
-  //Serial.println(milliVolt / 5);
   return milliVolt / 5;
 }
 
